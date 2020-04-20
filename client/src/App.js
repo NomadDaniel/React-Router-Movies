@@ -35,7 +35,6 @@ const App = () => {
         
       </Switch>
             
-      <div>Replace this Div with your Routes</div>
     </div>
   );
 };

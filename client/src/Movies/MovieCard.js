@@ -23,7 +23,7 @@ const MovieCard = props => {
           </div>
         ))}
       </div>
-      <div className="save-button">Save</div>
+      <div onClick={props.saveMovie} className="save-button">Save</div>
     </div>
 
   )

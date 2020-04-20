@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-import { Route, Switch, Link } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 
 import SavedList from './Movies/SavedList';
 import Movie from './Movies/Movie';
 import MovieList from './Movies/MovieList';
-
-
-
 
 const App = () => {
   const [savedList, setSavedList] = useState( [] );
@@ -25,7 +22,7 @@ const App = () => {
       
       <Switch>
         <Route path='/movies/:id'>
-          <Movie />
+          <Movie addToSavedList={addToSavedList}/>
         </Route>
 
         <Route path='/'>
